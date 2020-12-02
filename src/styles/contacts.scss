@@ -1,0 +1,17 @@
+.contacts__item {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  color: #555;
+  margin-left: 50px;
+  
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.contacts__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}

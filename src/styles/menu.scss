@@ -1,0 +1,42 @@
+.logo {
+  margin-right: 48px;
+}
+
+.menu__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu__item {
+  margin-left: 48px;
+  display: inline-block;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  padding-bottom: 5px;
+  position: relative;
+  &::after {
+    content: "";
+    background-color: #E1E1E1;
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 100%;
+    }
+  }
+}

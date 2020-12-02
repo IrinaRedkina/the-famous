@@ -1,0 +1,30 @@
+.search {
+  width: 415px;
+}
+
+.search__label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.search__form {
+  display: flex;
+}
+
+.search__input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-family: inherit;
+  padding: 0 15px;
+  border: 1px solid #E1E1E1;
+  border-right: none;
+  font-size: 14px;
+  transition: border-color .3s;
+
+  &:focus {
+    border-color: #B5B5B5;
+  }
+}

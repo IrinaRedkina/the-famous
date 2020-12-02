@@ -1,0 +1,173 @@
+body {
+  font: normal 400 16px/1.5 "Merriweather", serif;
+  color: #343030;
+  background: #fff;
+}
+
+.container {
+  max-width: 1245px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+  Pressing footer to bottom
+*/
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.site-header {
+  flex: 0 0 auto;
+}
+
+.site-main {
+  flex: 1 0 auto;
+}
+
+.site-footer {
+  flex: 0 0 auto;
+}
+
+/*
+  Grid
+*/
+
+.grid {
+  display: flex;
+}
+
+.grid--middle {
+  align-items: center;
+}
+
+.grid--between {
+  justify-content: space-between;
+}
+
+.grid--wrap {
+  flex-wrap: wrap;
+}
+
+/*
+  Title
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 0.6;
+  margin-bottom: 25px;
+}
+
+h1, h3, h4 {
+  font-weight: 700;
+}
+
+h2, h5, h6 {
+  font-weight: 400;
+}
+
+h4, h5, h6 {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/*
+  Buttons
+*/
+
+.button {
+  background: #403432;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 35px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  color: #F4F6F9;
+  border: none;
+  font-family: inherit;
+  transition: background .3s;
+
+  &:hover {
+    background-color: #776763;
+  }
+
+  &:disabled:not(.button--success) {
+    background-color: #C1B4B1;
+    cursor: default;
+  }
+}
+
+.button--success {
+  background-color: #5B3A32;
+  position: relative;
+  padding: 0 25px 0 10px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 10px;
+    background: url(./assets/check.svg) no-repeat center;
+    background-size: 100%;
+    margin-right: 5px;
+  }
+}
+
+/*
+  Section
+*/
+
+.section {
+  padding: 45px 0;
+  background-color: #fff;
+}
+
+.section--border-bottom {
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.section--border-top {
+  border-top: 1px solid #E1E1E1;
+}
+
+.section--header,
+.section--footer {
+  padding: 25px 0;
+}
+
+.section--light {
+  background-color:#ECEAEA;
+}
+
+.cards {
+  margin-top: 40px;
+}
+
+.empty-text {
+  text-align: center;
+  font-size: 22px;
+  color: darken(#ECEAEA, 15%);
+  font-weight: 700;
+  margin: 15px auto;
+  padding: 60px;
+}

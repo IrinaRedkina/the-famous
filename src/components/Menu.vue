@@ -1,7 +1,7 @@
 <template>
   <nav class="menu">
     <a href="/" class="logo">
-      <img src="../assets/logo.svg" alt="The Famous" class="logo-img">
+      <img src="images/logo.svg" alt="The Famous" class="logo-img">
     </a>
 
     <ul class="menu__list">
